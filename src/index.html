@@ -2,23 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/png">
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>intro-component-with-sign-up-form</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="card__title">Título</h1>
-      <p class="card__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis
-        mollitia sequi, quae voluptatem, eligendi, nam repudiandae cupiditate ad
-        consequatur natus omnis ducimus pariatur excepturi in magni voluptas
-        repellat quasi?
-      </p>
-      <a class="card__button" href="">boton</a>
-    </div>
+    <main class="main">
+      <div class="main__item">
+        <h2 class="title">Learn to code by watching others</h2>
+        <p class="text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+      </div>
+      <div class="main__container">
+        <a class="button text--button" href="#"><span class="text--bold">Try it free 7 days </span>then $20/mo. thereafter</a>
+        <div class="container">
+          <div class="form__container">
+            <div class="form__field">
+              <label class="label" for="first-name">First Name</label>
+              <input class="input" type="text" id="first-name" name="firts-name">
+            </div>
+            <div class="form__field">
+              <label class="label"  for="last-name">Last Name</label>
+              <input class="input"  type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form__field">
+              <label class="label"  for="email">Email Address</label>
+              <input class="input"  type="text" id="email" name="email">
+            </div>
+            <div class="form__field">
+              <label class="label"  for="password">Password</label>
+              <input class="input"  type="text" id="password" name="password">
+            </div>
+          </div>
+          <input class="submit" type="submit" value="CLAIM YOUR FREE TRIAL" />
+          <p class="text">By clicking the button, you are agreeing to our <span class="text--pink">Terms and Services</span></p>
+        </div>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
