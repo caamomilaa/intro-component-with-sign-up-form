@@ -1,14 +1,13 @@
 @use '../mixins/responsive.scss' as *;
-.title{
-    font-weight: 700;
-    font-size: 1.75rem;
-    line-height: 36px;
-    letter-spacing: -0.0181rem;
-    margin-bottom: 1rem;
-    @include responsive (desktop){
-        font-size: 3.125rem;
-        line-height: 55px;
-        letter-spacing: -0.0325rem;
-        margin-bottom: 0.6875rem;
-    }
+.title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 36px;
+  letter-spacing: -0.0181rem;
+  margin: 0;
+  @include responsive(desktop) {
+    font-size: 3.125rem;
+    line-height: 55px;
+    letter-spacing: -0.0325rem;
+  }
 }

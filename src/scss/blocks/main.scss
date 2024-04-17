@@ -1,22 +1,17 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    text-align: center;
-    margin-inline: 24px;
-    margin-block: 88px;
-    color: white;
-}
-.main__container{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 20.4375rem;
-    border-radius: 0.625rem;
-    background-color: white;
+@use '../mixins/responsive.scss' as *;
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  margin-inline: 24px;
+  margin-block: 88px;
+  color: white;
+  @include responsive(desktop) {
+    align-items: center;
+    flex-direction: row;
+    padding-inline: 165px;
+    padding-block: 121px;
+    margin: 0;
+  }
 }
